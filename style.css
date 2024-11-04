@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 30px;
+    background: rgb(235,192,229);
+    background: linear-gradient(90deg, rgba(235,192,229,1) 0%, rgba(193,217,252,1) 54%, rgba(255,236,253,1) 100%);
+}
+
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+ input{
+    width:100%;
+    font-size:32px;
+    margin:5px 0;
+    border: 1px solid black;
+    padding:10px;
+    outline:none;
+    display:inline-block;
+ }
+ .search-bar{
+    width:80%;
+    border-radius: 50px;
+ }
+ .submit-button{
+    width:15%;
+    background:#000;
+    color:#FFF;
+    border-radius: 50px;
+ }
+ 
+
+ 
+      

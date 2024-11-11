@@ -1,11 +1,16 @@
 body{
     text-align: center;
+    background: #fadadd;
+    
+}
+
+h1{
+    margin-top: 200px;
     font-family: "Fascinate Inline", system-ui;
+    color: #2e5984;
     font-weight: 400px;
     font-style: normal;
-    font-size: 30px;
-    background: rgb(235,192,229);
-    background: linear-gradient(90deg, rgba(235,192,229,1) 0%, rgba(193,217,252,1) 54%, rgba(255,236,253,1) 100%);
+    font-size: 50px;
 }
 
 /*
@@ -21,8 +26,8 @@ form{
  input{
     width:100%;
     font-size:32px;
-    margin:5px 0;
-    border: 1px solid black;
+    margin: 5px 0;
+    border: none;
     padding:10px;
     outline:none;
     display:inline-block;
@@ -30,14 +35,111 @@ form{
  .search-bar{
     width:80%;
     border-radius: 50px;
+    border: 3px solid #2e5984;
  }
  .submit-button{
     width:15%;
-    background:#000;
-    color:#FFF;
+    background:#2e5984;
+    color:#ffffff;
     border-radius: 50px;
  }
  
 
+ /*
+=================================================
+BOOKMARKS
+=================================================
+*/
+.bookmarks a{
+    text-decoration: none;
+ }
+ .bookmarks{
+    padding:30px;
+    clear:both;
+ }
+ .bookmarks i{
+    font-size:42px;
+    margin:0 20px;
+    color: #2e5984;
+    transition:.15s;
+    vertical-align: top;
+ }
+ .bookmarks i:hover{
+    font-size:72px;
+    position:relative;
+ }
  
-      
+
+ /*
+=================================================
+POST-IT NOTE
+=================================================
+*/
+#note{
+   width:250px;
+   height:250px;
+   resize: none;
+   background:#ffffff;
+   padding:15px;
+   border:none;
+   position: absolute;
+   bottom:50px;
+   left:50px;
+   font-family:sans-serif;
+   opacity: 0;
+  }
+  
+
+/*
+=================================================
+CALCULATOR
+=================================================
+*/
+#calc{
+   opacity:0;
+}
+
+
+/*
+=================================================
+CLOCK
+=================================================
+*/
+#clock{
+   position:absolute;
+   bottom:0;
+   right:0;
+   font-family:  "Fascinate Inline", system-ui;
+   font-size: 40px ;
+   color: #2e5984;
+   font-weight: 400px;
+   font-style: normal;
+}
+
+
+/*
+=================================================
+APP WRAPPER
+=================================================
+*/
+.app-wrapper{
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background:#FFF;
+ }
+ #app{
+   z-index:-1;
+   opacity:0;
+   transition:.2s;
+ }
+ 
+ .exit{
+   position:absolute;
+   top:10px;
+   right:10px;
+   cursor:pointer;
+   color:#999;
+ }
